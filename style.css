@@ -51,7 +51,7 @@ p {
     margin-left: 30px;
 }
 .checkboxes::before {
-    content: url(/assets/images/icon-list.svg);
+    content: url(./assets/images/icon-list.svg);
     margin-right: 10px;
     position: absolute;
     left: -3px;
