@@ -1,0 +1,156 @@
+html {
+    box-sizing: border-box;
+}
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: hsl(235, 18%, 26%);
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 16px;
+}
+
+.container {
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    padding: 2%;
+    border-radius: 25px;
+    gap: 2em;
+}
+
+.form-left {
+    padding: 3%
+}
+
+h1 {
+    color: hsl(234, 29%, 20%);
+    font-size: 3.5em;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+p {
+    color: hsl(234, 29%, 20%);
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+
+.product-names {
+    position: relative;
+    margin-bottom: 3em;
+}
+.product-names p {
+    margin-left: 30px;
+}
+.checkboxes::before {
+    content: url(/assets/images/icon-list.svg);
+    margin-right: 10px;
+    position: absolute;
+    left: -3px;
+}
+
+
+label {
+    color: hsl(234, 29%, 20%);
+    font-weight: 600;
+    margin-bottom: 10px;
+    display: block;
+} 
+
+input {
+    border: 1px solid hsl(231, 7%, 60%);
+    border-radius: 10px;
+    padding: 20px 22px;
+    font-size: 1em;
+    width: 100%; 
+    color: hsl(231, 7%, 60%);
+    outline: none;
+    margin-bottom: 30px;
+    transition: border 0.156s ease-in-out;
+}
+
+input:hover {
+   border: 1px solid  hsl(234, 29%, 20%);
+}
+
+.submit-btn {
+    padding: 18px 22px;
+    width: 100%;
+    color: white;
+    font-weight: 700;
+    background:  hsl(234, 29%, 20%);
+    border-radius: 10px;
+    border: 1px solid  hsl(234, 29%, 20%);
+    outline: none;
+    transition: background-color 0.65s cubic-bezier(0.59, 0.88, 0.77, 1), box-shadow 0.65s cubic-bezier(0.59, 0.88, 0.77, 1) ;
+}
+
+.submit-btn:hover {
+    border: 1px solid  hsl(4, 100%, 67%);
+    background: hsl(4, 100%, 67%);
+    box-shadow: 0px 4px 9px hsla(4, 100%, 67%, .8);
+}
+
+.form-error-msg {
+    position: absolute;
+    top: 2px;
+    right: 10px;
+    display: none;
+    font-weight: 700;
+    font-size: 15px;
+    color: hsl(4, 100%, 67%);
+}
+
+.error-active {
+    display: block;
+}
+
+.input-error-msg {
+    border: 1px solid  hsl(4, 100%, 67%);
+    color:  hsl(4, 100%, 67%);
+    background-color:  hsla(4, 100%, 67%, 0.059) ;
+}
+.input-error-msg:hover {
+    border: 1px solid  hsl(4, 100%, 67%);
+}
+
+form {
+    position: relative;
+}
+.sign-up-img {
+    display: none;
+}
+
+/* Mobile Screens */
+@media (max-width: 480px) {
+    body {
+        background-color: #fff;
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+        font-size: 16px;
+    }
+    .container{
+        flex-direction: column-reverse;
+        border-radius: 0;
+        align-items: center;
+        gap: 0;
+    }
+    .sign-up-desktop {
+        display: none;
+    }
+    .sign-up-img {
+        width: 100%;
+        display: block;
+    }
+    
+}
+
