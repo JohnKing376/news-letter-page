@@ -24,13 +24,21 @@
           <label for="email-address">Email address</label>
           <span class="form-error-msg"></span>
           <input type="email" name="email" id="contactEmail" placeholder="email@company.com" onkeyup="checkInputs()">
-          <button type="submit" class="submit-btn">Subscribe to monthly newsletter</button>
+          <button class="submit-btn " onclick="openPopup()">Subscribe to monthly newsletter</button>
         </form>
     </div>
     <div class="form-right">
       <img src="./assets/images/illustration-sign-up-desktop.svg" alt="Sign-up Image" class="sign-up-desktop">
       <img src="./assets/images/illustration-sign-up-mobile.svg" alt="" class="sign-up-img">
     </div>
+  </div>
+  <!-- Pop-up Begins Here -->
+  <div class="successPopup" id="successPopup">
+    <img src="./assets/images/icon-success.svg" alt="">
+    <h1 class="popUp-text">Thanks for subscribing!</h1>
+    <p class="popUp-para">A confirmation email has been sent to <span class="emailInput"></span>. Please open it and click the button inside to confirm your subscription.</p>
+
+    <button type="submit" class="close-popUp" onclick="closePopup()">Dismiss message</button>
   </div>
   <script src="app.js"></script>
 </body>
