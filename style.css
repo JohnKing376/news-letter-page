@@ -180,7 +180,7 @@ form {
     }
     .successPopup {
         margin-bottom: 120px;
-        overflow-x: hidden;
+        overflow: hidden;
         padding: 3em;
     }
     .close-popUp {
