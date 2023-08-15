@@ -179,6 +179,7 @@ form {
         display: block;
     }
     .successPopup {
+        margin-bottom: 120px;
         overflow-x: hidden;
         padding: 3em;
     }
