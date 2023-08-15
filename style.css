@@ -181,6 +181,7 @@ form {
     .successPopup {
         overflow: hidden;
         padding: 3em;
+        margin-top: 60px;
     }
     .close-popUp {
         margin-top: 5rem;
