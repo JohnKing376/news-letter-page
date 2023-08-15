@@ -176,6 +176,7 @@ form {
         display: none;
     }
     .sign-up-img {
+        margin-top: 40px;
         display: block;
     }
     .successPopup {
