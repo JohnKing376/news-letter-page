@@ -163,7 +163,7 @@ form {
         margin: 0;
         padding: 0;
         font-size: 16px;
-        margin-top: 72px;
+        overflow: hidden;
     }
     .container{
         flex-direction: column-reverse;
@@ -179,7 +179,6 @@ form {
         display: block;
     }
     .successPopup {
-        margin-bottom: 120px;
         overflow: hidden;
         padding: 3em;
     }
